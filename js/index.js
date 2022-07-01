@@ -1,10 +1,14 @@
+const fill = document.querySelector('.fill')
+const empties = document.querySelectorAll('.empty')
 
+fill.addEventListener('dragstart', dragStart)
+fill.addEventListener('dragend', dragEnd)
 
 function dragStart() {
   console.log('drag, start')
 }
 
-function dragSEnd() {
+function dragEnd() {
   console.log('drag, end')
 }
 
